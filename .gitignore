@@ -1,0 +1,6 @@
+### black list ###
+.ssh/*
+
+### white list ###
+!.ssh/config
+!.ssh/mux/.gitkeep

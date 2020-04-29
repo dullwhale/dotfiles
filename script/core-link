@@ -1,0 +1,5 @@
+inputrc /etc/inputrc :
+.config/ ~/.config :
+.gitconfig ~/.gitconfig which git > /dev/null
+.vimrc ~/.vimrc which vim > /dev/null
+.ssh/ ~/.ssh which ssh > /dev/null
