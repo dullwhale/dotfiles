@@ -1,3 +1,5 @@
 [user]
 	name = dullwhale
 	email = dullwhale@gmail.com
+[diff]
+	algorithm = histogram
