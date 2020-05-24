@@ -11,7 +11,11 @@ set number
 set laststatus=2
 
 syntax on
-set autoindent
+
 set background=dark
 
 set encoding=utf-8
+
+" indent
+set tabstop=2
+set autoindent
