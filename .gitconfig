@@ -1,5 +1,12 @@
-[user]
-	name = dullwhale
-	email = dullwhale@gmail.com
 [diff]
 	algorithm = histogram
+
+# OSS、個人開発用
+[includeIf "gitdir:~/repo/oss/"]
+	path = ~/.gitconf.d/oss
+
+# 仕事用
+[includeif "gitdir:~/repo/work/"]
+	path = ~/.gitconf.d/work
+[includeif "gitdir:~/project/"]
+	path = ~/.gitconf.d/work

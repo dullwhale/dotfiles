@@ -1,6 +1,7 @@
 ### black list ###
 /.ssh/*
 /.ssh/mux/*
+/gitconf.d/work
 
 ### white list ###
 !/.ssh/config
