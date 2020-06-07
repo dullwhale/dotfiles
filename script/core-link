@@ -1,4 +1,5 @@
 inputrc /etc/inputrc :
+.inputrc ~/.inputrc :
 .config/ ~/.config :
 .gitconfig ~/.gitconfig which git > /dev/null
 .gitconf.d/ ~/.gitconf.d which git > /dev/null
