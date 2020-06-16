@@ -19,3 +19,9 @@ set encoding=utf-8
 " indent
 set tabstop=2
 set autoindent
+
+augroup on-file-load
+	autocmd!
+	autocmd BufNewFile,BufRead *.yaml setlocal expandtab
+	autocmd BufNewFile,BufRead *.yml setlocal expandtab
+augroup END
