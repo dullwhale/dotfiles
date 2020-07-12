@@ -1,0 +1,38 @@
+set visualbell
+set autoread
+
+" search settings
+set hlsearch
+set ignorecase
+set incsearch
+set smartcase
+
+set number
+set laststatus=2
+
+syntax on
+
+set background=dark
+
+set encoding=utf-8
+
+set autoindent
+
+augroup on-file-load
+	autocmd!
+	autocmd BufNewFile,BufRead *.yaml setlocal expandtab
+	autocmd BufNewFile,BufRead *.yml setlocal expandtab
+augroup END
+
+call plug#begin('~/.vim/plugged')
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+Plug 'mattn/vim-lsp-icons'
+
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
+call plug#end()
+
+call map(sort(split(globpath(&runtimepath, '_config/*.vim'))), {->[execute('exec "so" v:val')]})

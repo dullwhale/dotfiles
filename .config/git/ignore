@@ -20,9 +20,6 @@ tags
 # Persistent undo
 [._]*.un~
 
-# Coc configuration directory
-.vim
-
 
 .idea/
 Thumbs.db
