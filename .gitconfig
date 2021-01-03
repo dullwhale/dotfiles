@@ -1,6 +1,11 @@
 [diff]
 	algorithm = histogram
 
+# デフォルトのgitconfig
+[user]
+	name = dullwhale
+	email = dullwhale@gmail.com
+
 # OSS、個人開発用
 [includeIf "gitdir:~/repo/oss/"]
 	path = ~/.gitconf.d/oss
