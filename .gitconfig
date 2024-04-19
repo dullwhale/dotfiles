@@ -9,9 +9,12 @@
 # OSS、個人開発用
 [includeIf "gitdir:~/repo/oss/"]
 	path = ~/.gitconf.d/oss
+[includeIf "gitdir:~/win-repo/oss/"]
+	path = ~/.gitconf.d/oss
 
 # 仕事用
 [includeif "gitdir:~/repo/work/"]
 	path = ~/.gitconf.d/work
-[includeif "gitdir:~/project/"]
+[includeif "gitdir:~/win-repo/work"]
 	path = ~/.gitconf.d/work
+
